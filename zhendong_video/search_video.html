@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>搜索视频</title>
+<style>
+    #button{
+        width: auto;
+        height: auto;
+        float: left;
+        padding: 5px;
+        border: 3px solid black;
+    }
+    #Black_button{
+        width: auto;
+        height: auto;
+        float: left;
+        padding: 5px;
+        background-color: black;
+        border: 3px solid black;
+    }
+</style>
+<div id="button" ><img src="http://61.186.173.89:2019/2021/02/18/09c722d5d7189.png" alt="videologo.png" title="videologo.png" width="150" height="50"/>
+</div>
+<div id="button">
+    <a href="index.html">首页</a>
+</div>
+<div id="Black_button"><font color="white">搜索视频</font></div>
+<div id="button"><a href="search_user.html">搜索用户</a></div>
+<style>
+    *{
+            padding: 0;
+            margin: 0;
+        }
+        .search{
+            width: 60%;            
+            margin: 20px auto;
+            display: flex;
+            /*border: 1px solid red;*/
+        }
+        .search input{
+            float: left;
+            flex: 6;
+            height: 30px;
+            outline: none;
+            border: 3px solid black;
+            box-sizing: border-box;
+            padding-left: 10px;
+        }
+        .search button{
+            float: right;
+            width: 10%;
+            height: 30px;
+            background-color: black;
+            color: white;
+            border-style: none;
+            outline: none;
+        }
+        .search button i{
+            font-style: normal;
+        }
+        .search button:hover{
+            font-size: 16px;
+        }
+</style>
+<br><br><br><br><br>
+<h1 align="center">视频搜索</h1>
+<br><br>
+<body>
+    <div class="search">
+        <input type="text" placeholder="请输入..." name="in" id="in"  />
+        <button onclick="getinput()"><i>搜索</i></button>
+    </div>
+</body>
+<script>
+    function getinput()
+    {
+        var res=document.getElementById('in').value;
+        var x = "video/" + res + ".html";
+        window.location.href = x;
+    }
+</script>
+</hr>
+<body align="center">版权所有©2021 振东视频-ZhenBei</body>
+</html>
